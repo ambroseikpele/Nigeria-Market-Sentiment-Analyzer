@@ -1,1 +1,5 @@
 transformers
+pandas 
+matplotlib 
+wordcloud
+torch
