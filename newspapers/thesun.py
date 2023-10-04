@@ -15,10 +15,7 @@ link_list=[]
 
 def scrape():
     for element in news_date:
-        print(element)
-        print()
         news= element.find('h3', {'class':'archive-grid-single-title'}).text.strip()
-        print(news)
         date= element.find('p', {'class':'post-date'}).text.strip()
         # Convert the string into a datetime object
         date_obj = datetime.strptime(date, "%b %d, %Y %I:%M %p")
