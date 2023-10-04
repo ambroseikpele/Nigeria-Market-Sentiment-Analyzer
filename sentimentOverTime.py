@@ -31,7 +31,7 @@ def get_df(df):
           if sentiment not in df_date['sentiment'].values:
               # If sentiment is missing, append a new row with 0 values
               total = df_date['total_count'].iloc[0]  # Assuming total is the same for a given date
-              df = df.append({'date': date, 'sentiment': sentiment, 'count': 0, 'total_count': total, 'percentage': 0}, ignore_index=True)
+              df.loc[len(df)] = {'date': date, 'sentiment': sentiment, 'count': 0, 'total_count': total, 'percentage': 0}
 
   # Sort dataframe by Date and Sentiment for better visualization
   df = df.sort_values(by=['date', 'sentiment']).reset_index(drop=True)
