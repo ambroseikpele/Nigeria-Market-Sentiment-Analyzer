@@ -56,7 +56,7 @@ text = ' '.join(df['headline'])
 wordcloud = WordCloud(width=800, height=400, background_color='black', stopwords=STOPWORDS).generate(text)
 
 # Display the word cloud in Streamlit
-st.write("### Word Cloud")
+st.write("Word Cloud")
 fig, ax = plt.subplots()
 ax.imshow(wordcloud, interpolation='bilinear')
 ax.axis('off')
