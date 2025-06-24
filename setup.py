@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='nigeria_market_sentiment_analyzer',
+    name='ngnewspaper',
     version='0.1.0',
     author='Ambrose Ikpele',
     author_email='ikpeleambroseobinna@gmail.com',
@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/ambroseikpele/Nigeria-Market-Sentiment-Analyzer',
-    packages=find_packages(),
+    packages=["newspaper"],
     install_requires=[
         'fastapi',
         'uvicorn',
