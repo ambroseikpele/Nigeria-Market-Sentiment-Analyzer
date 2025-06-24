@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ngnewspaper',
+    name='ngnewspapers',
     version='0.1.0',
     author='Ambrose Ikpele',
     author_email='ikpeleambroseobinna@gmail.com',
