@@ -1,5 +1,5 @@
 import pandas as pd
-import news
+from newspapers import news
 import torch
 
 news_df = news.get_news()
