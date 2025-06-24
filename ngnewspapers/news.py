@@ -1,4 +1,4 @@
-import guardian, punch, thesun
+from . import guardian, punch, thesun
 import pandas as pd
 
 def get_news():
