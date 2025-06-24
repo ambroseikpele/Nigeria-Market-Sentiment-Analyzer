@@ -1,5 +1,5 @@
 import pandas as pd
-from newspapers import news
+from ngnewspapers import news
 import torch
 
 news_df = news.get_news()

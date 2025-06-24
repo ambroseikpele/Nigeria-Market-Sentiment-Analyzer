@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/ambroseikpele/Nigeria-Market-Sentiment-Analyzer',
-    packages=["newspaper"],
+    packages=["ngnewspaper"],
     install_requires=[
         'fastapi',
         'uvicorn',
