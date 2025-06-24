@@ -1,4 +1,4 @@
-from newspapers import guardian, punch, thesun
+import guardian, punch, thesun
 import pandas as pd
 
 def get_news():
