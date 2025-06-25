@@ -4,7 +4,7 @@ from datetime import datetime
 import pandas as pd
 from fake_useragent import UserAgent
 from time import sleep
-from getwebdriver import get_driver
+from .getwebdriver import get_driver
 
 
 
