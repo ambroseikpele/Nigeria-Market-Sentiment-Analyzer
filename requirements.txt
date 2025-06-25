@@ -5,3 +5,6 @@ wordcloud
 torch
 plotly
 beautifulsoup4
+fake-useragent
+seleniumbase
+webdriver-manager

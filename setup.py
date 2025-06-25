@@ -21,7 +21,9 @@ setup(
         'transformers',
         'torch',
         'tqdm',
-        'fake-useragent'
+        'fake-useragent',
+        'seleniumbase',
+        'webdriver-manager',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
