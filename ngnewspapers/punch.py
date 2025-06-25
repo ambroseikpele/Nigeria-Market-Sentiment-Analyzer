@@ -84,6 +84,7 @@ def scrape_date(dt):
     link = soup.find_all('li', {'class': 'page-item'})[-1].find('a')['href'].strip('/')
 
     max_page = int(link[link.rfind('/') + 1:])
+    print("max_page : ", max_page)
     #link = link.replace(str(max_page), '')
 
     # Normalize dt
@@ -93,6 +94,7 @@ def scrape_date(dt):
     def get_page_date_range(page):
         
         df = scrape(page)
+        print(df)
         df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y').dt.date
         #print(df)
         #print(page_url)
