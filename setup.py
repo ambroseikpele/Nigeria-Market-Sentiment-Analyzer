@@ -20,7 +20,8 @@ setup(
         'scikit-learn',
         'transformers',
         'torch',
-        'tqdm'
+        'tqdm',
+        'fake-useragent'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import pandas as pd
+from fake_useragent import UserAgent
+from time import sleep
 
 
 
@@ -74,7 +76,7 @@ def scrape(page=1):
     })
     return df
 
-def scrap_date(dt):
+def scrape_date(dt):
     base_url = 'https://punchng.com/topics/business/' #update
     #dt = datetime.strptime(dt, '%d/%m/%Y').date()
     # Step 1: Get base link and max page number
